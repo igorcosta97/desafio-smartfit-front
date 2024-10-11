@@ -1,9 +1,15 @@
 import './styles/global.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
+import Home from './pages/Home'
 
-function App() {
+export default function App() {
   return (
-   <h1 className='font-gothanBold text-mediumText'>Hello World</h1>
+    <div className='h-screen flex flex-col bg-black'>
+      <Header/>
+      <Home/>
+      <Footer/>
+    </div>
+   
   )
 }
-
-export default App
